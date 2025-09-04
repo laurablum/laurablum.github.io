@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <title>
-      Laura Blum – Senior Fullstack Engineer & DevOps Expert | Next.js, Nuxt.js,
-      NestJS Specialist
+      Laura Blum – Senior Fullstack Engineer & DevOps Expertin | Next.js,
+      Nuxt.js, NestJS Spezialistin
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta
       name="description"
-      content="Laura Blum is a freelance senior fullstack engineer and DevOps expert specializing in Next.js, Nuxt.js, and NestJS. With 6+ years experience in JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS, and MongoDB. Based in Germany, delivering scalable web applications, PWA development, GraphQL APIs, and CI/CD automation."
+      content="Laura Blum ist eine freiberufliche Senior Fullstack Entwicklerin und DevOps Expertin, spezialisiert auf Next.js, Nuxt.js und NestJS. Mit über 6 Jahren Erfahrung in JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS und MongoDB. Ansässig in Deutschland, liefert skalierbare Webanwendungen, PWA-Entwicklung, GraphQL APIs und CI/CD-Automatisierung."
     />
-    <link rel="canonical" href="https://www.laurablum.com/cv" />
+    <link rel="canonical" href="https://www.laurablum.com/de" />
     <meta
       property="og:title"
-      content="Laura Blum – Senior Fullstack Engineer & DevOps Expert | Next.js, Nuxt.js, NestJS Specialist"
+      content="Laura Blum – Senior Fullstack Engineer & DevOps Expertin | Next.js, Nuxt.js, NestJS Spezialistin"
     />
     <meta
       property="og:description"
-      content="Freelance senior fullstack engineer and DevOps expert with 6+ years experience in Next.js, Nuxt.js, NestJS, JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS, MongoDB. Building scalable, SEO-optimized web applications, PWAs, GraphQL APIs, and cloud solutions."
+      content="Freiberufliche Senior Fullstack Entwicklerin und DevOps Expertin mit über 6 Jahren Erfahrung in Next.js, Nuxt.js, NestJS, JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS, MongoDB. Entwicklung skalierbarer, SEO-optimierter Webanwendungen, PWAs, GraphQL APIs und Cloud-Lösungen."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.laurablum.com/cv" />
-    <meta property="og:site_name" content="Laura Blum CV" />
+    <meta property="og:url" content="https://www.laurablum.com/de" />
+    <meta property="og:site_name" content="Laura Blum Lebenslauf" />
     <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
-      content="Laura Blum – Senior Fullstack Engineer & DevOps Expert"
+      content="Laura Blum – Senior Fullstack Engineer & DevOps Expertin"
     />
     <meta
       name="twitter:description"
-      content="Freelance senior fullstack engineer and DevOps expert with 6+ years experience in Next.js, Nuxt.js, NestJS, JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS, MongoDB."
+      content="Freiberufliche Senior Fullstack Entwicklerin und DevOps Expertin mit über 6 Jahren Erfahrung in Next.js, Nuxt.js, NestJS, JavaScript, TypeScript, Vue.js, React.js, Node.js, AWS, MongoDB."
     />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Laura Blum",
-        "jobTitle": "Senior Fullstack Engineer & DevOps Expert",
+        "jobTitle": "Senior Fullstack Engineer & DevOps Expertin",
         "url": "https://www.laurablum.com",
         "sameAs": ["https://www.linkedin.com/in/laura-b-493233116"],
         "knowsAbout": [
@@ -73,7 +73,7 @@
         ],
         "address": {
           "@type": "PostalAddress",
-          "addressCountry": "Germany"
+          "addressCountry": "Deutschland"
         }
       }
     </script>
@@ -111,6 +111,33 @@
         border-radius: 14px;
         box-shadow: 0 4px 32px rgba(111, 0, 60, 0.07);
         overflow: hidden;
+      }
+      .language-switcher {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .language-switcher a {
+        padding: 8px 16px;
+        background: var(--white);
+        color: var(--primary);
+        text-decoration: none;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        font-weight: 600;
+        font-size: 0.9em;
+        transition: all 0.2s;
+      }
+      .language-switcher a:hover {
+        background: var(--primary);
+        color: var(--white);
+      }
+      .language-switcher a.active {
+        background: var(--primary);
+        color: var(--white);
       }
       aside,
       nav {
@@ -234,33 +261,6 @@
       a:hover {
         color: var(--accent);
       }
-      .language-switcher {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: flex;
-        gap: 10px;
-        z-index: 1000;
-      }
-      .language-switcher a {
-        padding: 8px 16px;
-        background: var(--white);
-        color: var(--primary);
-        text-decoration: none;
-        border-radius: 6px;
-        border: 1px solid var(--border);
-        font-weight: 600;
-        font-size: 0.9em;
-        transition: all 0.2s;
-      }
-      .language-switcher a:hover {
-        background: var(--primary);
-        color: var(--white);
-      }
-      .language-switcher a.active {
-        background: var(--primary);
-        color: var(--white);
-      }
       @media (max-width: 900px) {
         .language-switcher {
           position: relative;
@@ -308,15 +308,15 @@
   </head>
   <body>
     <div class="language-switcher">
-      <a href="index.html" class="active">🇺🇸 EN</a>
-      <a href="de.html">🇩🇪 DE</a>
+      <a href="index.html">🇺🇸 EN</a>
+      <a href="de.html" class="active">🇩🇪 DE</a>
     </div>
 
     <div class="wrapper">
       <aside>
         <h1>Laura Blum</h1>
-        <div class="title">Senior Fullstack Engineer &amp; DevOps Expert</div>
-        <nav aria-label="Contact">
+        <div class="title">Senior Fullstack Engineer &amp; DevOps Expertin</div>
+        <nav aria-label="Kontakt">
           <div class="contact-links">
             <a
               href="https://www.linkedin.com/in/laura-b-493233116"
@@ -326,79 +326,83 @@
             >
           </div>
         </nav>
-        <section class="lang" aria-label="Languages">
-          <div><span class="lang-flag">🇩🇪</span>German – Mother tongue</div>
-          <div><span class="lang-flag">🇺🇸</span>English – Business fluent</div>
+        <section class="lang" aria-label="Sprachen">
+          <div><span class="lang-flag">🇩🇪</span>Deutsch – Muttersprache</div>
+          <div>
+            <span class="lang-flag">🇺🇸</span>Englisch – Verhandlungssicher
+          </div>
         </section>
       </aside>
       <main>
         <header>
           <div class="intro">
-            🚀 I am a passionate <strong>Senior Fullstack Engineer</strong> and
-            <strong>DevOps Expert</strong> based in southern Germany,
-            specializing in building robust, scalable web applications with
-            <strong>Next.js</strong>, <strong>Nuxt.js</strong>, and
-            <strong>NestJS</strong>. With over six years of hands-on experience,
-            I deliver end-to-end solutions—from modern frontend interfaces to
-            high-performance backend APIs and cloud-native infrastructure. My
-            expertise covers the full development lifecycle, including
-            architecture, CI/CD automation, and cloud deployments. I have a
-            proven track record in designing and implementing fullstack
-            applications using the latest JavaScript and TypeScript frameworks,
-            and I am passionate about optimizing workflows and delivering
-            maintainable, production-ready code for businesses of all sizes.
+            🚀 Ich bin eine leidenschaftliche
+            <strong>Senior Fullstack Entwicklerin</strong> und
+            <strong>DevOps Expertin</strong> aus Süddeutschland, spezialisiert
+            auf die Entwicklung robuster, skalierbarer Webanwendungen mit
+            <strong>Next.js</strong>, <strong>Nuxt.js</strong> und
+            <strong>NestJS</strong>. Mit über sechs Jahren praktischer Erfahrung
+            liefere ich End-to-End-Lösungen – von modernen Frontend-Interfaces
+            bis hin zu hochperformanten Backend-APIs und cloud-nativer
+            Infrastruktur. Meine Expertise deckt den gesamten Entwicklungszyklus
+            ab, einschließlich Architektur, CI/CD-Automatisierung und
+            Cloud-Deployments. Ich habe eine nachgewiesene Erfolgsbilanz im
+            Design und der Implementierung von Fullstack- Anwendungen mit den
+            neuesten JavaScript- und TypeScript-Frameworks und bin
+            leidenschaftlich daran interessiert, Workflows zu optimieren und
+            wartbaren, produktionsreifen Code für Unternehmen jeder Größe zu
+            liefern.
           </div>
         </header>
 
         <section>
-          <h2>Career – Next.js, Nuxt.js, NestJS &amp; DevOps Experience</h2>
+          <h2>Berufserfahrung – Next.js, Nuxt.js, NestJS &amp; DevOps</h2>
 
           <div class="item">
             <div class="item-title">Head of Engineering</div>
-            <div class="item-meta">Servokat GmbH (since October 2024)</div>
+            <div class="item-meta">Servokat GmbH (seit Oktober 2024)</div>
             <ul>
               <li>
-                Creation and planning of a traffic lawyer administration tool
-                using <strong>NestJS</strong> and modern JavaScript/TypeScript
-                stacks
+                Erstellung und Planung eines Verkehrsanwalt-Verwaltungstools mit
+                <strong>NestJS</strong> und modernen
+                JavaScript/TypeScript-Stacks
               </li>
               <li>
-                Participation in metrics creation with R for data-driven
-                decision making
+                Mitwirkung bei der Erstellung von Kennzahlen mit R für
+                datengetriebene Entscheidungsfindung
               </li>
               <li>
-                Administration and maintenance of multiple Linux and Windows
-                servers
+                Administration und Wartung mehrerer Linux- und Windows-Server
               </li>
               <li>
-                Implementation and maintenance of AWS runtimes and AWS Elastic
-                Beanstalk deployments
+                Implementierung und Wartung von AWS-Laufzeiten und AWS Elastic
+                Beanstalk-Deployments
               </li>
               <li>
-                Implementation and maintenance of Supabase authentication
-                workflows and database management
+                Implementierung und Wartung von Supabase-Authentifizierungs-
+                Workflows und Datenbankmanagement
               </li>
               <li>
-                Participation in customer workshops and hosting workshops for
-                external interfaces
+                Teilnahme an Kunden-Workshops und Durchführung von Workshops für
+                externe Schnittstellen
               </li>
               <li>
-                Implementation of external interfaces and maintenance of
-                customer relationships
+                Implementierung externer Schnittstellen und Pflege von
+                Kundenbeziehungen
               </li>
               <li>
-                Elaboration of customer concepts and tenders for new business
-                opportunities
+                Ausarbeitung von Kundenkonzepten und Ausschreibungen für neue
+                Geschäftsmöglichkeiten
               </li>
               <li>
-                Evaluation of tools and frameworks, including
-                <strong>Next.js</strong>, <strong>Nuxt.js</strong>, and
-                containerized solutions
+                Bewertung von Tools und Frameworks, einschließlich
+                <strong>Next.js</strong>, <strong>Nuxt.js</strong> und
+                containerisierten Lösungen
               </li>
-              <li>Reporting to CTO, customers, and business partners</li>
+              <li>Berichterstattung an CTO, Kunden und Geschäftspartner</li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, TypeScript, NodeJS,
+              <strong>Technologien:</strong> JavaScript, TypeScript, NodeJS,
               npm, yarn, pnpm, NestJS, MySQL, RESTful API, AWS Amplify, git,
               GitLab, Docker, Vue.js, Nuxt.js, Next.js, React.js, WebStorm,
               Apache Kafka, DomainDrivenDesign, Jest, webpack, tailwind, shadcn,
@@ -412,47 +416,47 @@
               Senior Fullstack Developer / Engineering Manager
             </div>
             <div class="item-meta">
-              IU Group (July 2022 - October 2024, part-time until January 2025)
+              IU Group (Juli 2022 - Oktober 2024, Teilzeit bis Januar 2025)
             </div>
             <ul>
               <li>
-                Participation in the development of a student administration
-                tool using <strong>NestJS</strong> backend architecture
+                Mitwirkung an der Entwicklung eines Studenten-Verwaltungstools
+                mit <strong>NestJS</strong>-Backend-Architektur
               </li>
               <li>
-                Implementation of GitLab CI/CD pipelines and DevOps automation
+                Implementierung von GitLab CI/CD-Pipelines und
+                DevOps-Automatisierung
               </li>
               <li>
-                Moving repositories from Bitbucket to GitLab for improved
-                workflow management
+                Migration von Repositories von Bitbucket zu GitLab für
+                verbessertes Workflow-Management
               </li>
               <li>
-                Contribution in frontend architecture concepts and modern
-                JavaScript frameworks
+                Beitrag zu Frontend-Architekturkonzepten und modernen
+                JavaScript-Frameworks
               </li>
               <li>
-                Planning and conducting workshops for GitLab Pipelines and
-                Frontend Architecture
+                Planung und Durchführung von Workshops für GitLab-Pipelines und
+                Frontend-Architektur
               </li>
               <li>
-                Coaching of Junior and Mid-Level developers, creating career
-                plans for team members
+                Coaching von Junior- und Mid-Level-Entwicklern, Erstellung von
+                Karriereplänen für Teammitglieder
               </li>
               <li>
-                Onboarding of new team members and mediation of conflicts within
-                the team
+                Onboarding neuer Teammitglieder und Mediation von Konflikten im
+                Team
               </li>
               <li>
-                Implementation of DORA metrics and KPIs for performance
-                measurement
+                Implementierung von DORA-Metriken und KPIs für Leistungsmessung
               </li>
               <li>
-                Improvement of services through clean code methods and
-                consistent TypeScript typing
+                Verbesserung von Services durch Clean-Code-Methoden und
+                konsistente TypeScript-Typisierung
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, TypeScript, NodeJS,
+              <strong>Technologien:</strong> JavaScript, TypeScript, NodeJS,
               npm, NestJS, MySQL, RESTful API, AWS Amplify, git, GitLab, Docker,
               Vue.js, WebStorm, Apache Kafka, SingleSPA, DomainDrivenDesign,
               Jest, webpack, tailwind, KPIs, DORA Metrics
@@ -462,32 +466,33 @@
           <div class="item">
             <div class="item-title">Senior Software Developer</div>
             <div class="item-meta">
-              Freelance for s.a.x. Software GmbH (October 2023)
+              Freiberuflich für s.a.x. Software GmbH (Oktober 2023)
             </div>
             <ul>
               <li>
-                Planning and development of a <strong>Node.js</strong> script to
-                download files from a GraphQL interface
+                Planung und Entwicklung eines <strong>Node.js</strong>-Skripts
+                zum Herunterladen von Dateien aus einer GraphQL-Schnittstelle
               </li>
               <li>
-                Implementation of CLI functionality to pass different GraphQL
-                interfaces via command-line parameters
+                Implementierung von CLI-Funktionalität zur Übergabe
+                verschiedener GraphQL-Schnittstellen über
+                Kommandozeilenparameter
               </li>
               <li>
-                Development of dynamic pre and post scripts to modify data
-                processing workflows
+                Entwicklung dynamischer Pre- und Post-Skripte zur Modifikation
+                von Datenverarbeitungs-Workflows
               </li>
               <li>
-                Implementation of template files for different output formats
-                and structures
+                Implementierung von Template-Dateien für verschiedene
+                Ausgabeformate und -strukturen
               </li>
               <li>
-                Comprehensive unit testing implementation with Jest for code
-                quality assurance
+                Umfassende Unit-Test-Implementierung mit Jest für Code-
+                Qualitätssicherung
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, NPM, Node.js, GraphQL,
+              <strong>Technologien:</strong> JavaScript, NPM, Node.js, GraphQL,
               git, GitHub, fs-extra, WebStorm, Jest
             </div>
           </div>
@@ -495,35 +500,36 @@
           <div class="item">
             <div class="item-title">Frontend Architect</div>
             <div class="item-meta">
-              Freelancer at trio-group GmbH (August 2023 - October 2023)
+              Freiberuflich bei trio-group GmbH (August 2023 - Oktober 2023)
             </div>
             <ul>
               <li>
-                Planning and conceptualization of a reusable, decoupled frontend
-                architecture for radio station
+                Planung und Konzeptionierung einer wiederverwendbaren,
+                entkoppelten Frontend-Architektur für Radiosender
               </li>
               <li>
-                Development of a Radio Stream Player with modern
-                <strong>Nuxt.js</strong> framework
+                Entwicklung eines Radio-Stream-Players mit modernem
+                <strong>Nuxt.js</strong>-Framework
               </li>
               <li>
-                Implementation of WebSocket interface for retrieving track
-                metadata using SockJS
+                Implementierung einer WebSocket-Schnittstelle zum Abrufen von
+                Track-Metadaten mit SockJS
               </li>
               <li>
-                Development of reusable components for the website with Vue.js
+                Entwicklung wiederverwendbarer Komponenten für die Website mit
+                Vue.js
               </li>
               <li>
-                Integration with GraphQL interface for data fetching and
-                management
+                Integration mit GraphQL-Schnittstelle für Datenabruf und
+                -verwaltung
               </li>
               <li>
-                Conception and enforcement of Clean Code conventions and best
-                practices
+                Konzeption und Durchsetzung von Clean-Code-Konventionen und Best
+                Practices
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, TypeScript, yarn,
+              <strong>Technologien:</strong> JavaScript, TypeScript, yarn,
               Drupal, GraphQL, git, GitLab, Vue.js, Nuxt.js, WebStorm, SockJS
             </div>
           </div>
@@ -531,29 +537,29 @@
           <div class="item">
             <div class="item-title">Senior Frontend Developer</div>
             <div class="item-meta">
-              Freelancer at Pixeltreu eg (July 2023 - October 2023)
+              Freiberuflich bei Pixeltreu eg (Juli 2023 - Oktober 2023)
             </div>
             <ul>
               <li>
-                Development of a Progressive Web App (PWA) for DGAV (German
-                Society for General and Visceral Surgery)
+                Entwicklung einer Progressive Web App (PWA) für DGAV (Deutsche
+                Gesellschaft für Allgemein- und Viszeralchirurgie)
               </li>
               <li>
-                Planning and implementation of the PWA in collaboration with
-                backend developers
+                Planung und Implementierung der PWA in Zusammenarbeit mit
+                Backend-Entwicklern
               </li>
-              <li>Deployment of the PWA on Hetzner cloud infrastructure</li>
+              <li>Deployment der PWA auf Hetzner Cloud-Infrastruktur</li>
               <li>
-                Development of a Push Notification Service using
-                <strong>Node.js</strong> and Web Push technology
+                Entwicklung eines Push-Notification-Services mit
+                <strong>Node.js</strong> und Web-Push-Technologie
               </li>
               <li>
-                Deployment and maintenance of the Push Notification Service on
+                Deployment und Wartung des Push-Notification-Services auf
                 Hetzner
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, TypeScript, NodeJS,
+              <strong>Technologien:</strong> JavaScript, TypeScript, NodeJS,
               yarn, Express.js, MongoDB, RESTful API, Hetzner, git, Bitbucket,
               Docker, Vue.js, WebStorm, Vue PWA, Web-Push, MySQL, Spring Boot
             </div>
@@ -562,51 +568,53 @@
           <div class="item">
             <div class="item-title">Senior Fullstack Developer</div>
             <div class="item-meta">
-              Eberl Online GmbH (October 2020 - July 2022)
+              Eberl Online GmbH (Oktober 2020 - Juli 2022)
             </div>
             <ul>
               <li>
-                <strong>Lead Developer for EO.Heimat rewrite:</strong> Planning
-                and conception of complete application rewrite from Angular2 to
+                <strong>Lead Developer für EO.Heimat Rewrite:</strong> Planung
+                und Konzeption des kompletten Application-Rewrites von Angular2
+                zu
                 <strong>Vue.js</strong>
               </li>
               <li>
-                Sprint planning, API implementation, and file upload
-                improvements
+                Sprint-Planung, API-Implementierung und Verbesserungen beim
+                Datei-Upload
               </li>
               <li>
-                Implementation of CI/CD pipelines in GitLab with Docker Swarm
-                and NGINX reverse proxy
+                Implementierung von CI/CD-Pipelines in GitLab mit Docker Swarm
+                und NGINX Reverse Proxy
               </li>
               <li>
-                Integration of domains and SSL certificates for secure
-                deployments
+                Integration von Domains und SSL-Zertifikaten für sichere
+                Deployments
               </li>
               <li>
                 <strong
-                  >Lead Developer for "Wintersportbericht" processing:</strong
+                  >Lead Developer für "Wintersportbericht"-Verarbeitung:</strong
                 >
-                Data structure planning, frontend conception, and external
-                interface implementations
+                Datenstruktur-Planung, Frontend-Konzeption und externe
+                Schnittstellen-Implementierungen
               </li>
               <li>
-                Performance analysis and optimization for improved user
-                experience
+                Performance-Analyse und -Optimierung für verbesserte
+                Benutzererfahrung
               </li>
               <li>
-                <strong>DevOps Engineer:</strong> Migration from Docker Swarm to
+                <strong>DevOps Engineer:</strong> Migration von Docker Swarm zu
                 Azure WebApps
               </li>
               <li>
-                Moving GitLab repositories from self-hosted to managed solutions
+                Migration von GitLab-Repositories von Self-Hosted zu Managed
+                Solutions
               </li>
               <li>
-                Relocating MongoDB databases from self-hosted to Atlas for
-                improved scalability
+                Verlagerung von MongoDB-Datenbanken von Self-Hosted zu Atlas für
+                verbesserte Skalierbarkeit
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, TypeScript, NodeJS,
+              <strong>Technologien:</strong> JavaScript, TypeScript, NodeJS,
               npm, Express, MongoDB, RESTful API, Microsoft Azure, git, GitLab,
               Docker, Docker Swarm, NGINX, Vue.js, Angular 2, AJAX, Vuetify,
               Linux, Visual Studio Code, PHPStorm, Strato S3
@@ -616,71 +624,72 @@
           <div class="item">
             <div class="item-title">Fullstack Developer</div>
             <div class="item-meta">
-              konzepthaus Web Solutions GmbH (March 2019 - October 2020)
+              konzepthaus Web Solutions GmbH (März 2019 - Oktober 2020)
             </div>
             <ul>
               <li>
                 <strong
-                  >Lead Backend Developer for ZigZag Social Media App:</strong
+                  >Lead Backend Developer für ZigZag Social Media App:</strong
                 >
-                Planning migration from Firebase to MongoDB
+                Planung der Migration von Firebase zu MongoDB
               </li>
               <li>
-                Development of RESTful API for iOS App with performance
-                optimizations
+                Entwicklung einer RESTful API für iOS App mit Performance-
+                Optimierungen
               </li>
               <li>
-                Supporting frontend team in transitioning to new interface
-                architecture
+                Unterstützung des Frontend-Teams beim Übergang zur neuen
+                Schnittstellen-Architektur
               </li>
               <li>
-                Implementation of AWS S3 bucket for file storage and CI pipeline
-                in GitLab
+                Implementierung von AWS S3 Bucket für Dateispeicherung und
+                CI-Pipeline in GitLab
               </li>
               <li>
-                Delivery of backend in Microsoft Azure WebApp with push
-                notifications using node-apn
+                Bereitstellung des Backends in Microsoft Azure WebApp mit Push-
+                Benachrichtigungen über node-apn
               </li>
               <li>
                 <strong
-                  >Lead Developer for autoteileplusservice.de rewrite:</strong
+                  >Lead Developer für autoteileplusservice.de Rewrite:</strong
                 >
-                Planning and conception of complete rewrite from AngularJS to
+                Planung und Konzeption des kompletten Rewrites von AngularJS zu
                 <strong>ReactJS</strong>
               </li>
               <li>
-                Sprint planning, RESTful API development, and CI pipeline
-                implementation
+                Sprint-Planung, RESTful API-Entwicklung und CI-Pipeline-
+                Implementierung
               </li>
               <li>
-                Development of NGINX reverse proxy for HubSpot landing page
-                delivery
+                Entwicklung von NGINX Reverse Proxy für HubSpot Landing Page
+                Delivery
               </li>
               <li>
-                <strong>WebOperations Manager:</strong> Implementation of
-                multiple CI/CD pipelines for different projects
+                <strong>WebOperations Manager:</strong> Implementierung mehrerer
+                CI/CD-Pipelines für verschiedene Projekte
               </li>
               <li>
-                Management of GitLab repositories and user accounts with code
-                review contributions
+                Verwaltung von GitLab-Repositories und Benutzerkonten mit
+                Code-Review-Beiträgen
               </li>
               <li>
                 <strong
-                  >Lead Developer for inside-brillenprofi.de extranet with
+                  >Lead Developer für inside-brillenprofi.de Extranet mit
                   ApostropheCMS:</strong
                 >
-                Sprint planning and customer consulting
+                Sprint-Planung und Kundenberatung
               </li>
               <li>
-                Implementation of single sign-on solution for shops and
-                third-party app integration
+                Implementierung einer Single-Sign-On-Lösung für Shops und
+                Drittanbieter-App-Integration
               </li>
               <li>
-                CMS system extensions and adjustments for customer requirements
+                CMS-System-Erweiterungen und -Anpassungen für
+                Kundenanforderungen
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, NodeJS, npm, Express,
+              <strong>Technologien:</strong> JavaScript, NodeJS, npm, Express,
               MongoDB, RESTful API, Microsoft Azure, git, GitLab, Docker, NGINX,
               ReactJS, AngularJS, AJAX, Bootstrap, UIKit, Swift, ApostropheCMS,
               Linux, Atlassian Jira, Atlassian Bitbucket, Visual Studio Code,
@@ -690,37 +699,40 @@
         </section>
 
         <section>
-          <h2>Apprenticeship &amp; Early Career</h2>
+          <h2>Ausbildung &amp; Frühe Karriere</h2>
 
           <div class="item">
-            <div class="item-title">Software Development Apprentice</div>
+            <div class="item-title">Auszubildende Softwareentwicklung</div>
             <div class="item-meta">
-              konzepthaus Web Solutions GmbH (September 2017 - March 2019)
+              konzepthaus Web Solutions GmbH (September 2017 - März 2019)
             </div>
             <ul>
               <li>
                 <strong
-                  >Development of multi-language microsite nitzinger-it.de with
+                  >Entwicklung der mehrsprachigen Microsite nitzinger-it.de mit
                   ApostropheCMS:</strong
                 >
-                Extension and adjustment of CMS system for customer requirements
+                Erweiterung und Anpassung des CMS-Systems für
+                Kundenanforderungen
               </li>
-              <li>Implementation of e-mail forms and contact functionality</li>
+              <li>
+                Implementierung von E-Mail-Formularen und Kontaktfunktionalität
+              </li>
               <li>
                 <strong
-                  >Contribution to autoteileplusservice.de development:</strong
+                  >Beitrag zur autoteileplusservice.de-Entwicklung:</strong
                 >
-                Feature development, change requests implementation, and
-                deployment process optimization
+                Feature-Entwicklung, Umsetzung von Änderungsanfragen und
+                Optimierung des Deployment-Prozesses
               </li>
-              <li>Bug fixing and maintenance of existing applications</li>
+              <li>Bug-Fixing und Wartung bestehender Anwendungen</li>
               <li>
-                <strong>Contribution to www.fag-bremen.de development:</strong>
-                Feature development and comprehensive bug fixing
+                <strong>Beitrag zur www.fag-bremen.de-Entwicklung:</strong>
+                Feature-Entwicklung und umfassendes Bug-Fixing
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> JavaScript, NodeJS, npm, Express,
+              <strong>Technologien:</strong> JavaScript, NodeJS, npm, Express,
               MongoDB, RESTful API, Microsoft Azure, git, GitLab, Docker, NGINX,
               ReactJS, AngularJS, AJAX, Bootstrap, UIKit, Swift, ApostropheCMS,
               Linux, Atlassian Jira, Visual Studio Code, WebStorm
@@ -728,28 +740,29 @@
           </div>
 
           <div class="item">
-            <div class="item-title">Software Development Apprentice</div>
+            <div class="item-title">Auszubildende Softwareentwicklung</div>
             <div class="item-meta">
-              MATESO GmbH (September 2016 - March 2017)
+              MATESO GmbH (September 2016 - März 2017)
             </div>
             <ul>
               <li>
                 <strong
-                  >Contribution to Password Safe version 8 development:</strong
+                  >Beitrag zur Password Safe Version 8-Entwicklung:</strong
                 >
-                Development of onscreen keyboard functionality for enhanced
-                security
+                Entwicklung von Bildschirmtastatur-Funktionalität für erhöhte
+                Sicherheit
               </li>
               <li>
-                Development of changelog creation tool for version management
+                Entwicklung eines Changelog-Erstellungstools für
+                Versionsverwaltung
               </li>
               <li>
-                General contribution to software development and comprehensive
-                bug fixing
+                Allgemeine Beiträge zur Softwareentwicklung und umfassendes
+                Bug-Fixing
               </li>
             </ul>
             <div class="tech">
-              <strong>Technologies:</strong> C#, .NET, Microsoft Team Foundation
+              <strong>Technologien:</strong> C#, .NET, Microsoft Team Foundation
               Server, Visual Studio, ReSharper
             </div>
           </div>
@@ -758,8 +771,9 @@
     </div>
     <footer class="footer">
       &copy; 2025 Laura Blum &mdash; Senior Fullstack Engineer, Next.js,
-      Nuxt.js, NestJS &amp; DevOps Specialist &nbsp;|&nbsp;
-      <a href="imprint.html" rel="legal" aria-label="Imprint">Imprint</a>
+      Nuxt.js, NestJS &amp; DevOps Spezialistin &nbsp;|&nbsp;
+      <a href="imprint.html" rel="legal" aria-label="Impressum">Impressum</a>
     </footer>
   </body>
 </html>
+
