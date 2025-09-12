@@ -82,228 +82,7 @@
       rel="stylesheet"
     />
     <style>
-      :root {
-        --primary: #6f003c;
-        --primary-dark: #4a0028;
-        --primary-light: #a03c6b;
-        --accent: #b3005e;
-        --bg: #f9f6f8;
-        --white: #fff;
-        --border: #e5d6e0;
-        --muted: #7a5a6c;
-        --sidebar-bg: #f3eaf1;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background: var(--bg);
-        color: var(--primary-dark);
-        font-family: "Inter", Arial, sans-serif;
-        font-size: 17px;
-        line-height: 1.7;
-      }
-      .wrapper {
-        display: flex;
-        max-width: 1100px;
-        margin: 48px auto 0 auto;
-        background: var(--white);
-        border-radius: 14px;
-        box-shadow: 0 4px 32px rgba(111, 0, 60, 0.07);
-        overflow: hidden;
-      }
-      .language-switcher {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: flex;
-        gap: 10px;
-        z-index: 1000;
-      }
-      .language-switcher a {
-        padding: 8px 16px;
-        background: var(--white);
-        color: var(--primary);
-        text-decoration: none;
-        border-radius: 6px;
-        border: 1px solid var(--border);
-        font-weight: 600;
-        font-size: 0.9em;
-        transition: all 0.2s;
-      }
-      .language-switcher a:hover {
-        background: var(--primary);
-        color: var(--white);
-      }
-      .language-switcher a.active {
-        background: var(--primary);
-        color: var(--white);
-      }
-      aside,
-      nav {
-        background: var(--sidebar-bg);
-        min-width: 260px;
-        max-width: 320px;
-        padding: 40px 32px;
-        border-right: 1px solid var(--border);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
-      aside h1 {
-        font-size: 2em;
-        margin: 0 0 0.2em 0;
-        font-weight: 700;
-        color: var(--primary);
-        letter-spacing: 1px;
-      }
-      aside .title {
-        font-size: 1.1em;
-        color: var(--accent);
-        font-weight: 600;
-        margin-bottom: 1.5em;
-      }
-      nav .contact-links a {
-        display: flex;
-        align-items: center;
-        color: var(--primary-dark);
-        text-decoration: none;
-        margin-bottom: 0.7em;
-        font-weight: 500;
-        transition: color 0.2s;
-      }
-      nav .contact-links a:hover {
-        color: var(--primary);
-        text-decoration: underline;
-      }
-      aside .lang {
-        margin-top: 2.5em;
-      }
-      aside .lang div {
-        margin-bottom: 0.5em;
-        font-size: 1em;
-      }
-      aside .lang-flag {
-        font-size: 1.2em;
-        margin-right: 0.3em;
-      }
-      main {
-        flex: 1;
-        padding: 48px 48px 32px 48px;
-      }
-      .intro {
-        background: var(--bg);
-        border-left: 4px solid var(--primary);
-        padding: 18px 28px;
-        border-radius: 6px;
-        margin-bottom: 2.2em;
-        font-size: 1.08em;
-        color: var(--muted);
-      }
-      h1,
-      h2 {
-        color: var(--primary);
-      }
-      h1 {
-        font-size: 2em;
-        margin-bottom: 0.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      h2 {
-        font-size: 1.3em;
-        font-weight: 700;
-        border-bottom: 1.5px solid var(--border);
-        padding-bottom: 0.2em;
-        margin-top: 2.2em;
-        margin-bottom: 1.2em;
-        letter-spacing: 0.5px;
-      }
-      .item {
-        margin-bottom: 2em;
-      }
-      .item-title {
-        font-weight: 600;
-        font-size: 1.08em;
-        color: var(--primary-dark);
-        margin-bottom: 0.1em;
-      }
-      .item-meta {
-        color: var(--muted);
-        font-size: 0.97em;
-        margin-bottom: 0.3em;
-      }
-      ul {
-        margin: 0.3em 0 0.7em 1.2em;
-        padding-left: 1.2em;
-      }
-      .tech {
-        color: var(--primary);
-        font-size: 0.98em;
-        margin-top: 0.3em;
-        margin-bottom: 0.7em;
-        font-style: italic;
-      }
-      .footer {
-        text-align: center;
-        color: var(--muted);
-        font-size: 0.98em;
-        margin: 32px 0 0 0;
-        padding: 18px 0 0 0;
-        border-top: 1px solid var(--border);
-        background: var(--white);
-      }
-      a {
-        color: var(--primary);
-        transition: color 0.2s;
-      }
-      a:hover {
-        color: var(--accent);
-      }
-      @media (max-width: 900px) {
-        .language-switcher {
-          position: relative;
-          top: 0;
-          right: 0;
-          margin-bottom: 20px;
-          justify-content: center;
-        }
-        .wrapper {
-          flex-direction: column;
-          margin: 0;
-          border-radius: 0;
-          box-shadow: none;
-        }
-        aside,
-        nav {
-          max-width: 100%;
-          min-width: 0;
-          border-right: none;
-          border-bottom: 1px solid var(--border);
-          flex-direction: row;
-          align-items: flex-start;
-          padding: 32px 5vw;
-          gap: 32px;
-        }
-        aside .lang {
-          margin-top: 0;
-        }
-        main {
-          padding: 32px 5vw 24px 5vw;
-        }
-      }
-      @media (max-width: 600px) {
-        main {
-          padding: 18px 3vw 12px 3vw;
-        }
-        aside,
-        nav {
-          padding: 18px 3vw;
-          flex-direction: column;
-          gap: 0;
-        }
-      }
+      @import url("site.css");
     </style>
   </head>
   <body>
@@ -336,70 +115,82 @@
       <main>
         <header>
           <div class="intro">
-            🚀 Ich bin eine leidenschaftliche
+            🚀 Als leidenschaftliche
             <strong>Senior Fullstack Entwicklerin</strong> und
-            <strong>DevOps Expertin</strong> aus Süddeutschland, spezialisiert
-            auf die Entwicklung robuster, skalierbarer Webanwendungen mit
+            <strong>DevOps Expertin</strong> aus Süddeutschland entwickle ich
+            <strong>robuste, skalierbare Webanwendungen</strong> mit
             <strong>Next.js</strong>, <strong>Nuxt.js</strong> und
             <strong>NestJS</strong>. Mit über sechs Jahren praktischer Erfahrung
-            liefere ich End-to-End-Lösungen – von modernen Frontend-Interfaces
-            bis hin zu hochperformanten Backend-APIs und cloud-nativer
-            Infrastruktur. Meine Expertise deckt den gesamten Entwicklungszyklus
-            ab, einschließlich Architektur, CI/CD-Automatisierung und
-            Cloud-Deployments. Ich habe eine nachgewiesene Erfolgsbilanz im
-            Design und der Implementierung von Fullstack- Anwendungen mit den
-            neuesten JavaScript- und TypeScript-Frameworks und bin
-            leidenschaftlich daran interessiert, Workflows zu optimieren und
-            wartbaren, produktionsreifen Code für Unternehmen jeder Größe zu
-            liefern.
+            liefere ich <strong>End-to-End-Lösungen</strong> – von modernen
+            <strong>Frontend-Interfaces</strong> bis hin zu
+            <strong>hochperformanten Backend-APIs</strong> und
+            <strong>cloud-nativer Infrastruktur</strong>. Meine Expertise
+            umfasst den gesamten <strong>Entwicklungszyklus</strong>,
+            einschließlich <strong>Software-Architektur</strong>,
+            <strong>CI/CD-Automatisierung</strong> und
+            <strong>Cloud-Deployments</strong>. Mit bewährter Erfahrung in der
+            Konzeption und Umsetzung von <strong>Fullstack-Lösungen</strong> auf
+            Basis modernster <strong>JavaScript</strong>- und
+            <strong>TypeScript-Technologien</strong> optimiere ich
+            Entwicklungsprozesse und erstelle
+            <strong>wartungsfreundlichen, produktionstauglichen Code</strong>
+            für Unternehmen aller Größenordnungen.
           </div>
         </header>
 
         <section>
-          <h2>Berufserfahrung – Next.js, Nuxt.js, NestJS &amp; DevOps</h2>
+          <h2>Berufserfahrung</h2>
 
           <div class="item">
             <div class="item-title">Head of Engineering</div>
             <div class="item-meta">Servokat GmbH (seit Oktober 2024)</div>
             <ul>
               <li>
-                Erstellung und Planung eines Verkehrsanwalt-Verwaltungstools mit
+                <strong>Entwicklung und Konzeption</strong> eines
+                Verwaltungstools für Verkehrsanwälte mit
                 <strong>NestJS</strong> und modernen
-                JavaScript/TypeScript-Stacks
+                <strong>JavaScript/TypeScript-Stacks</strong>
               </li>
               <li>
-                Mitwirkung bei der Erstellung von Kennzahlen mit R für
-                datengetriebene Entscheidungsfindung
+                <strong>Entwicklung von Kennzahlen</strong> mit
+                <strong>R</strong> für datengetriebene Entscheidungsfindung
               </li>
               <li>
-                Administration und Wartung mehrerer Linux- und Windows-Server
+                <strong>Administration und Wartung</strong> mehrerer
+                <strong>Linux</strong>- und <strong>Windows-Server</strong>
               </li>
               <li>
-                Implementierung und Wartung von AWS-Laufzeiten und AWS Elastic
-                Beanstalk-Deployments
+                <strong>Implementierung und Wartung</strong> von
+                <strong>AWS-Laufzeiten</strong> und
+                <strong>AWS Elastic Beanstalk</strong>-Deployments
               </li>
               <li>
-                Implementierung und Wartung von Supabase-Authentifizierungs-
-                Workflows und Datenbankmanagement
+                <strong>Implementierung und Wartung</strong> von
+                <strong>Supabase-Authentifizierungs-Workflows</strong> und
+                <strong>Datenbankmanagement</strong>
               </li>
               <li>
-                Teilnahme an Kunden-Workshops und Durchführung von Workshops für
-                externe Schnittstellen
+                <strong>Durchführung von Kunden-Workshops</strong> und
+                <strong>Workshops für externe Schnittstellen</strong>
               </li>
               <li>
-                Implementierung externer Schnittstellen und Pflege von
-                Kundenbeziehungen
+                <strong>Entwicklung externer Schnittstellen</strong> und Pflege
+                von Kundenbeziehungen
               </li>
               <li>
-                Ausarbeitung von Kundenkonzepten und Ausschreibungen für neue
-                Geschäftsmöglichkeiten
+                <strong>Konzeption und Ausarbeitung</strong> von Kundenkonzepten
+                und Ausschreibungen für neue Geschäftsmöglichkeiten
               </li>
               <li>
-                Bewertung von Tools und Frameworks, einschließlich
-                <strong>Next.js</strong>, <strong>Nuxt.js</strong> und
-                containerisierten Lösungen
+                <strong>Technologie-Bewertung</strong> von Tools und Frameworks,
+                einschließlich <strong>Next.js</strong>,
+                <strong>Nuxt.js</strong> und
+                <strong>containerisierten Lösungen</strong>
               </li>
-              <li>Berichterstattung an CTO, Kunden und Geschäftspartner</li>
+              <li>
+                <strong>Berichterstattung</strong> an CTO, Kunden und
+                Geschäftspartner
+              </li>
             </ul>
             <div class="tech">
               <strong>Technologien:</strong> JavaScript, TypeScript, NodeJS,
@@ -416,43 +207,50 @@
               Senior Fullstack Developer / Engineering Manager
             </div>
             <div class="item-meta">
-              IU Group (Juli 2022 - Oktober 2024, Teilzeit bis Januar 2025)
+              IU Group (Juli 2022 - Oktober 2024, Teilzeit August 2024 - Januar
+              2025)
             </div>
             <ul>
               <li>
-                Mitwirkung an der Entwicklung eines Studenten-Verwaltungstools
-                mit <strong>NestJS</strong>-Backend-Architektur
+                <strong>Entwicklung eines Studenten-Verwaltungstools</strong>
+                mit
+                <strong>NestJS-Backend-Architektur</strong>
               </li>
               <li>
-                Implementierung von GitLab CI/CD-Pipelines und
-                DevOps-Automatisierung
+                <strong>Implementierung von GitLab CI/CD-Pipelines</strong> und
+                <strong>DevOps-Automatisierung</strong>
               </li>
               <li>
-                Migration von Repositories von Bitbucket zu GitLab für
-                verbessertes Workflow-Management
+                <strong>Migration von Repositories</strong> von Bitbucket zu
+                <strong>GitLab</strong> für
+                <strong>verbessertes Workflow-Management</strong>
               </li>
               <li>
-                Beitrag zu Frontend-Architekturkonzepten und modernen
-                JavaScript-Frameworks
+                <strong>Entwicklung von Frontend-Architekturkonzepten</strong>
+                und
+                <strong>moderne JavaScript-Frameworks</strong>
               </li>
               <li>
-                Planung und Durchführung von Workshops für GitLab-Pipelines und
-                Frontend-Architektur
+                <strong>Planung und Durchführung von Workshops</strong> für
+                <strong>GitLab-Pipelines</strong> und
+                <strong>Frontend-Architektur</strong>
               </li>
               <li>
-                Coaching von Junior- und Mid-Level-Entwicklern, Erstellung von
-                Karriereplänen für Teammitglieder
+                <strong>Coaching von Junior- und Mid-Level-Entwicklern</strong>,
+                Erstellung von Karriereplänen für Teammitglieder
               </li>
               <li>
-                Onboarding neuer Teammitglieder und Mediation von Konflikten im
-                Team
+                <strong>Onboarding neuer Teammitglieder</strong> und Mediation
+                von Teamkonflikten
               </li>
               <li>
-                Implementierung von DORA-Metriken und KPIs für Leistungsmessung
+                <strong>Implementierung von DORA-Metriken</strong> und
+                <strong>KPIs für Leistungsmessung</strong>
               </li>
               <li>
-                Verbesserung von Services durch Clean-Code-Methoden und
-                konsistente TypeScript-Typisierung
+                <strong>Service-Optimierung</strong> durch
+                <strong>Clean-Code-Methoden</strong> und
+                <strong>konsistente TypeScript-Typisierung</strong>
               </li>
             </ul>
             <div class="tech">
@@ -470,25 +268,31 @@
             </div>
             <ul>
               <li>
-                Planung und Entwicklung eines <strong>Node.js</strong>-Skripts
-                zum Herunterladen von Dateien aus einer GraphQL-Schnittstelle
+                <strong>Planung und Entwicklung</strong> eines
+                <strong>Node.js</strong>-Skripts zum
+                <strong>Herunterladen von Dateien</strong> aus einer
+                <strong>GraphQL-Schnittstelle</strong>
               </li>
               <li>
-                Implementierung von CLI-Funktionalität zur Übergabe
-                verschiedener GraphQL-Schnittstellen über
-                Kommandozeilenparameter
+                <strong>Implementierung von CLI-Funktionalität</strong> zur
+                Übergabe verschiedener
+                <strong>GraphQL-Schnittstellen</strong> über
+                <strong>Kommandozeilenparameter</strong>
               </li>
               <li>
-                Entwicklung dynamischer Pre- und Post-Skripte zur Modifikation
-                von Datenverarbeitungs-Workflows
+                <strong>Entwicklung dynamischer Pre- und Post-Skripte</strong>
+                zur
+                <strong>Modifikation von Datenverarbeitungs-Workflows</strong>
               </li>
               <li>
-                Implementierung von Template-Dateien für verschiedene
-                Ausgabeformate und -strukturen
+                <strong>Implementierung von Template-Dateien</strong> für
+                verschiedene
+                <strong>Ausgabeformate und -strukturen</strong>
               </li>
               <li>
-                Umfassende Unit-Test-Implementierung mit Jest für Code-
-                Qualitätssicherung
+                <strong>Umfassende Unit-Test-Implementierung</strong> mit
+                <strong>Jest</strong> für
+                <strong>Code- Qualitätssicherung</strong>
               </li>
             </ul>
             <div class="tech">
@@ -504,28 +308,35 @@
             </div>
             <ul>
               <li>
-                Planung und Konzeptionierung einer wiederverwendbaren,
-                entkoppelten Frontend-Architektur für Radiosender
+                <strong>Planung und Konzeptionierung</strong> einer
+                <strong
+                  >wiederverwendbaren, entkoppelten Frontend-Architektur</strong
+                >
+                für <strong>Radiosender</strong>
               </li>
               <li>
-                Entwicklung eines Radio-Stream-Players mit modernem
-                <strong>Nuxt.js</strong>-Framework
+                <strong>Entwicklung eines Radio-Stream-Players</strong> mit
+                modernem
+                <strong>Nuxt.js-Framework</strong>
               </li>
               <li>
-                Implementierung einer WebSocket-Schnittstelle zum Abrufen von
-                Track-Metadaten mit SockJS
+                <strong>Implementierung einer WebSocket-Schnittstelle</strong>
+                zum <strong>Abrufen von Track-Metadaten</strong> mit
+                <strong>SockJS</strong>
               </li>
               <li>
-                Entwicklung wiederverwendbarer Komponenten für die Website mit
-                Vue.js
+                <strong>Entwicklung wiederverwendbarer Komponenten</strong> für
+                die Website mit
+                <strong>Vue.js</strong>
               </li>
               <li>
-                Integration mit GraphQL-Schnittstelle für Datenabruf und
-                -verwaltung
+                <strong>Integration mit GraphQL-Schnittstelle</strong> für
+                <strong>Datenabruf und -verwaltung</strong>
               </li>
               <li>
-                Konzeption und Durchsetzung von Clean-Code-Konventionen und Best
-                Practices
+                <strong>Konzeption und Durchsetzung</strong> von
+                <strong>Clean-Code-Konventionen</strong> und
+                <strong>Best Practices</strong>
               </li>
             </ul>
             <div class="tech">
@@ -541,21 +352,27 @@
             </div>
             <ul>
               <li>
-                Entwicklung einer Progressive Web App (PWA) für DGAV (Deutsche
-                Gesellschaft für Allgemein- und Viszeralchirurgie)
+                <strong>Entwicklung einer Progressive Web App (PWA)</strong> für
+                DGAV (Deutsche Gesellschaft für Allgemein- und
+                Viszeralchirurgie)
               </li>
               <li>
-                Planung und Implementierung der PWA in Zusammenarbeit mit
-                Backend-Entwicklern
-              </li>
-              <li>Deployment der PWA auf Hetzner Cloud-Infrastruktur</li>
-              <li>
-                Entwicklung eines Push-Notification-Services mit
-                <strong>Node.js</strong> und Web-Push-Technologie
+                <strong>Planung und Implementierung der PWA</strong> in
+                Zusammenarbeit mit Backend-Entwicklern
               </li>
               <li>
-                Deployment und Wartung des Push-Notification-Services auf
-                Hetzner
+                <strong>Deployment der PWA</strong> auf
+                <strong>Hetzner Cloud-Infrastruktur</strong>
+              </li>
+              <li>
+                <strong>Entwicklung eines Push-Notification-Services</strong>
+                mit <strong>Node.js</strong> und
+                <strong>Web-Push-Technologie</strong>
+              </li>
+              <li>
+                <strong>Deployment und Wartung</strong> des
+                <strong>Push-Notification-Services</strong> auf
+                <strong>Hetzner</strong>
               </li>
             </ul>
             <div class="tech">
@@ -572,45 +389,54 @@
             </div>
             <ul>
               <li>
-                <strong>Lead Developer für EO.Heimat Rewrite:</strong> Planung
-                und Konzeption des kompletten Application-Rewrites von Angular2
+                <strong>Lead Developer für EO.Heimat Rewrite:</strong>
+                <strong>Planung und Konzeption</strong> des kompletten
+                <strong>Application-Rewrites</strong> von
+                <strong>Angular2</strong>
                 zu
                 <strong>Vue.js</strong>
               </li>
               <li>
-                Sprint-Planung, API-Implementierung und Verbesserungen beim
-                Datei-Upload
+                <strong>Sprint-Planung</strong>,
+                <strong>API-Implementierung</strong> und
+                <strong>Verbesserungen beim Datei-Upload</strong>
               </li>
               <li>
-                Implementierung von CI/CD-Pipelines in GitLab mit Docker Swarm
-                und NGINX Reverse Proxy
+                <strong>Implementierung von CI/CD-Pipelines</strong> in
+                <strong>GitLab</strong> mit <strong>Docker Swarm</strong> und
+                <strong>NGINX Reverse Proxy</strong>
               </li>
               <li>
-                Integration von Domains und SSL-Zertifikaten für sichere
-                Deployments
+                <strong>Integration von Domains</strong> und
+                <strong>SSL-Zertifikaten</strong> für
+                <strong>sichere Deployments</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer für "Wintersportbericht"-Verarbeitung:</strong
                 >
-                Datenstruktur-Planung, Frontend-Konzeption und externe
-                Schnittstellen-Implementierungen
+                <strong>Datenstruktur-Planung</strong>,
+                <strong>Frontend-Konzeption</strong> und
+                <strong>externe Schnittstellen-Implementierungen</strong>
               </li>
               <li>
-                Performance-Analyse und -Optimierung für verbesserte
-                Benutzererfahrung
+                <strong>Performance-Analyse und -Optimierung</strong> für
+                <strong>verbesserte Benutzererfahrung</strong>
               </li>
               <li>
-                <strong>DevOps Engineer:</strong> Migration von Docker Swarm zu
-                Azure WebApps
+                <strong>DevOps Engineer:</strong>
+                <strong>Migration von Docker Swarm</strong> zu
+                <strong>Azure WebApps</strong>
               </li>
               <li>
-                Migration von GitLab-Repositories von Self-Hosted zu Managed
-                Solutions
+                <strong>Migration von GitLab-Repositories</strong> von
+                <strong>Self-Hosted</strong> zu
+                <strong>Managed Solutions</strong>
               </li>
               <li>
-                Verlagerung von MongoDB-Datenbanken von Self-Hosted zu Atlas für
-                verbesserte Skalierbarkeit
+                <strong>Verlagerung von MongoDB-Datenbanken</strong> von
+                <strong>Self-Hosted</strong> zu <strong>Atlas</strong> für
+                <strong>verbesserte Skalierbarkeit</strong>
               </li>
             </ul>
             <div class="tech">
@@ -631,61 +457,73 @@
                 <strong
                   >Lead Backend Developer für ZigZag Social Media App:</strong
                 >
-                Planung der Migration von Firebase zu MongoDB
+                <strong>Planung der Migration</strong> von
+                <strong>Firebase</strong> zu <strong>MongoDB</strong>
               </li>
               <li>
-                Entwicklung einer RESTful API für iOS App mit Performance-
-                Optimierungen
+                <strong>Entwicklung einer RESTful API</strong> für
+                <strong>iOS App</strong> mit
+                <strong>Performance- Optimierungen</strong>
               </li>
               <li>
-                Unterstützung des Frontend-Teams beim Übergang zur neuen
-                Schnittstellen-Architektur
+                <strong>Unterstützung des Frontend-Teams</strong> beim
+                <strong>Übergang zur neuen Schnittstellen-Architektur</strong>
               </li>
               <li>
-                Implementierung von AWS S3 Bucket für Dateispeicherung und
-                CI-Pipeline in GitLab
+                <strong>Implementierung von AWS S3 Bucket</strong> für
+                <strong>Dateispeicherung</strong> und
+                <strong>CI-Pipeline in GitLab</strong>
               </li>
               <li>
-                Bereitstellung des Backends in Microsoft Azure WebApp mit Push-
-                Benachrichtigungen über node-apn
+                <strong>Bereitstellung des Backends</strong> in
+                <strong>Microsoft Azure WebApp</strong> mit
+                <strong>Push- Benachrichtigungen</strong> über
+                <strong>node-apn</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer für autoteileplusservice.de Rewrite:</strong
                 >
-                Planung und Konzeption des kompletten Rewrites von AngularJS zu
+                <strong>Planung und Konzeption</strong> des kompletten
+                <strong>Rewrites</strong> von <strong>AngularJS</strong> zu
                 <strong>ReactJS</strong>
               </li>
               <li>
-                Sprint-Planung, RESTful API-Entwicklung und CI-Pipeline-
-                Implementierung
+                <strong>Sprint-Planung</strong>,
+                <strong>RESTful API-Entwicklung</strong> und
+                <strong>CI-Pipeline- Implementierung</strong>
               </li>
               <li>
-                Entwicklung von NGINX Reverse Proxy für HubSpot Landing Page
-                Delivery
+                <strong>Entwicklung von NGINX Reverse Proxy</strong> für
+                <strong>HubSpot Landing Page Delivery</strong>
               </li>
               <li>
-                <strong>WebOperations Manager:</strong> Implementierung mehrerer
-                CI/CD-Pipelines für verschiedene Projekte
+                <strong>WebOperations Manager:</strong>
+                <strong>Implementierung mehrerer CI/CD-Pipelines</strong> für
+                verschiedene <strong>Projekte</strong>
               </li>
               <li>
-                Verwaltung von GitLab-Repositories und Benutzerkonten mit
-                Code-Review-Beiträgen
+                <strong>Verwaltung von GitLab-Repositories</strong> und
+                <strong>Benutzerkonten</strong> mit
+                <strong>Code-Review-Beiträgen</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer für inside-brillenprofi.de Extranet mit
                   ApostropheCMS:</strong
                 >
-                Sprint-Planung und Kundenberatung
+                <strong>Sprint-Planung</strong> und
+                <strong>Kundenberatung</strong>
               </li>
               <li>
-                Implementierung einer Single-Sign-On-Lösung für Shops und
-                Drittanbieter-App-Integration
+                <strong>Implementierung einer Single-Sign-On-Lösung</strong> für
+                <strong>Shops</strong> und
+                <strong>Drittanbieter-App-Integration</strong>
               </li>
               <li>
-                CMS-System-Erweiterungen und -Anpassungen für
-                Kundenanforderungen
+                <strong>CMS-System-Erweiterungen</strong> und
+                <strong>-Anpassungen</strong> für
+                <strong>Kundenanforderungen</strong>
               </li>
             </ul>
             <div class="tech">
@@ -712,23 +550,31 @@
                   >Entwicklung der mehrsprachigen Microsite nitzinger-it.de mit
                   ApostropheCMS:</strong
                 >
-                Erweiterung und Anpassung des CMS-Systems für
-                Kundenanforderungen
+                <strong>Erweiterung und Anpassung</strong> des
+                <strong>CMS-Systems</strong> für
+                <strong>Kundenanforderungen</strong>
               </li>
               <li>
-                Implementierung von E-Mail-Formularen und Kontaktfunktionalität
+                <strong>Implementierung von E-Mail-Formularen</strong> und
+                <strong>Kontaktfunktionalität</strong>
               </li>
               <li>
                 <strong
-                  >Beitrag zur autoteileplusservice.de-Entwicklung:</strong
+                  >Mitarbeit an der Entwicklung von
+                  autoteileplusservice.de:</strong
                 >
-                Feature-Entwicklung, Umsetzung von Änderungsanfragen und
-                Optimierung des Deployment-Prozesses
+                <strong>Feature-Entwicklung</strong>,
+                <strong>Umsetzung von Änderungsanfragen</strong> und
+                <strong>Optimierung des Deployment-Prozesses</strong>
               </li>
-              <li>Bug-Fixing und Wartung bestehender Anwendungen</li>
               <li>
-                <strong>Beitrag zur www.fag-bremen.de-Entwicklung:</strong>
-                Feature-Entwicklung und umfassendes Bug-Fixing
+                <strong>Bug-Fixing</strong> und
+                <strong>Wartung bestehender Anwendungen</strong>
+              </li>
+              <li>
+                <strong>Mitarbeit an www.fag-bremen.de-Entwicklung:</strong>
+                <strong>Feature-Entwicklung</strong> und
+                <strong>umfassendes Bug-Fixing</strong>
               </li>
             </ul>
             <div class="tech">
@@ -747,18 +593,21 @@
             <ul>
               <li>
                 <strong
-                  >Beitrag zur Password Safe Version 8-Entwicklung:</strong
+                  >Mitarbeit an Password Safe Version 8-Entwicklung:</strong
                 >
-                Entwicklung von Bildschirmtastatur-Funktionalität für erhöhte
-                Sicherheit
+                <strong
+                  >Entwicklung von Bildschirmtastatur-Funktionalität</strong
+                >
+                für <strong>erhöhte Sicherheit</strong>
               </li>
               <li>
-                Entwicklung eines Changelog-Erstellungstools für
-                Versionsverwaltung
+                <strong>Entwicklung eines Changelog-Erstellungstools</strong>
+                für
+                <strong>Versionsverwaltung</strong>
               </li>
               <li>
-                Allgemeine Beiträge zur Softwareentwicklung und umfassendes
-                Bug-Fixing
+                <strong>Allgemeine Beiträge zur Softwareentwicklung</strong> und
+                <strong>umfassendes Bug-Fixing</strong>
               </li>
             </ul>
             <div class="tech">
@@ -776,4 +625,3 @@
     </footer>
   </body>
 </html>
-

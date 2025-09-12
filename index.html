@@ -82,228 +82,7 @@
       rel="stylesheet"
     />
     <style>
-      :root {
-        --primary: #6f003c;
-        --primary-dark: #4a0028;
-        --primary-light: #a03c6b;
-        --accent: #b3005e;
-        --bg: #f9f6f8;
-        --white: #fff;
-        --border: #e5d6e0;
-        --muted: #7a5a6c;
-        --sidebar-bg: #f3eaf1;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background: var(--bg);
-        color: var(--primary-dark);
-        font-family: "Inter", Arial, sans-serif;
-        font-size: 17px;
-        line-height: 1.7;
-      }
-      .wrapper {
-        display: flex;
-        max-width: 1100px;
-        margin: 48px auto 0 auto;
-        background: var(--white);
-        border-radius: 14px;
-        box-shadow: 0 4px 32px rgba(111, 0, 60, 0.07);
-        overflow: hidden;
-      }
-      aside,
-      nav {
-        background: var(--sidebar-bg);
-        min-width: 260px;
-        max-width: 320px;
-        padding: 40px 32px;
-        border-right: 1px solid var(--border);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
-      aside h1 {
-        font-size: 2em;
-        margin: 0 0 0.2em 0;
-        font-weight: 700;
-        color: var(--primary);
-        letter-spacing: 1px;
-      }
-      aside .title {
-        font-size: 1.1em;
-        color: var(--accent);
-        font-weight: 600;
-        margin-bottom: 1.5em;
-      }
-      nav .contact-links a {
-        display: flex;
-        align-items: center;
-        color: var(--primary-dark);
-        text-decoration: none;
-        margin-bottom: 0.7em;
-        font-weight: 500;
-        transition: color 0.2s;
-      }
-      nav .contact-links a:hover {
-        color: var(--primary);
-        text-decoration: underline;
-      }
-      aside .lang {
-        margin-top: 2.5em;
-      }
-      aside .lang div {
-        margin-bottom: 0.5em;
-        font-size: 1em;
-      }
-      aside .lang-flag {
-        font-size: 1.2em;
-        margin-right: 0.3em;
-      }
-      main {
-        flex: 1;
-        padding: 48px 48px 32px 48px;
-      }
-      .intro {
-        background: var(--bg);
-        border-left: 4px solid var(--primary);
-        padding: 18px 28px;
-        border-radius: 6px;
-        margin-bottom: 2.2em;
-        font-size: 1.08em;
-        color: var(--muted);
-      }
-      h1,
-      h2 {
-        color: var(--primary);
-      }
-      h1 {
-        font-size: 2em;
-        margin-bottom: 0.2em;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      h2 {
-        font-size: 1.3em;
-        font-weight: 700;
-        border-bottom: 1.5px solid var(--border);
-        padding-bottom: 0.2em;
-        margin-top: 2.2em;
-        margin-bottom: 1.2em;
-        letter-spacing: 0.5px;
-      }
-      .item {
-        margin-bottom: 2em;
-      }
-      .item-title {
-        font-weight: 600;
-        font-size: 1.08em;
-        color: var(--primary-dark);
-        margin-bottom: 0.1em;
-      }
-      .item-meta {
-        color: var(--muted);
-        font-size: 0.97em;
-        margin-bottom: 0.3em;
-      }
-      ul {
-        margin: 0.3em 0 0.7em 1.2em;
-        padding-left: 1.2em;
-      }
-      .tech {
-        color: var(--primary);
-        font-size: 0.98em;
-        margin-top: 0.3em;
-        margin-bottom: 0.7em;
-        font-style: italic;
-      }
-      .footer {
-        text-align: center;
-        color: var(--muted);
-        font-size: 0.98em;
-        margin: 32px 0 0 0;
-        padding: 18px 0 0 0;
-        border-top: 1px solid var(--border);
-        background: var(--white);
-      }
-      a {
-        color: var(--primary);
-        transition: color 0.2s;
-      }
-      a:hover {
-        color: var(--accent);
-      }
-      .language-switcher {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        display: flex;
-        gap: 10px;
-        z-index: 1000;
-      }
-      .language-switcher a {
-        padding: 8px 16px;
-        background: var(--white);
-        color: var(--primary);
-        text-decoration: none;
-        border-radius: 6px;
-        border: 1px solid var(--border);
-        font-weight: 600;
-        font-size: 0.9em;
-        transition: all 0.2s;
-      }
-      .language-switcher a:hover {
-        background: var(--primary);
-        color: var(--white);
-      }
-      .language-switcher a.active {
-        background: var(--primary);
-        color: var(--white);
-      }
-      @media (max-width: 900px) {
-        .language-switcher {
-          position: relative;
-          top: 0;
-          right: 0;
-          margin-bottom: 20px;
-          justify-content: center;
-        }
-        .wrapper {
-          flex-direction: column;
-          margin: 0;
-          border-radius: 0;
-          box-shadow: none;
-        }
-        aside,
-        nav {
-          max-width: 100%;
-          min-width: 0;
-          border-right: none;
-          border-bottom: 1px solid var(--border);
-          flex-direction: row;
-          align-items: flex-start;
-          padding: 32px 5vw;
-          gap: 32px;
-        }
-        aside .lang {
-          margin-top: 0;
-        }
-        main {
-          padding: 32px 5vw 24px 5vw;
-        }
-      }
-      @media (max-width: 600px) {
-        main {
-          padding: 18px 3vw 12px 3vw;
-        }
-        aside,
-        nav {
-          padding: 18px 3vw;
-          flex-direction: column;
-          gap: 0;
-        }
-      }
+      @import url("site.css");
     </style>
   </head>
   <body>
@@ -334,68 +113,83 @@
       <main>
         <header>
           <div class="intro">
-            🚀 I am a passionate <strong>Senior Fullstack Engineer</strong> and
-            <strong>DevOps Expert</strong> based in southern Germany,
-            specializing in building robust, scalable web applications with
+            🚀 As a passionate <strong>Senior Fullstack Engineer</strong> and
+            <strong>DevOps Expert</strong> based in southern Germany, I
+            specialize in building
+            <strong>robust, scalable web applications</strong> with
             <strong>Next.js</strong>, <strong>Nuxt.js</strong>, and
             <strong>NestJS</strong>. With over six years of hands-on experience,
-            I deliver end-to-end solutions—from modern frontend interfaces to
-            high-performance backend APIs and cloud-native infrastructure. My
-            expertise covers the full development lifecycle, including
-            architecture, CI/CD automation, and cloud deployments. I have a
-            proven track record in designing and implementing fullstack
-            applications using the latest JavaScript and TypeScript frameworks,
-            and I am passionate about optimizing workflows and delivering
-            maintainable, production-ready code for businesses of all sizes.
+            I deliver <strong>end-to-end solutions</strong>—from modern
+            <strong>frontend interfaces</strong> to
+            <strong>high-performance backend APIs</strong> and
+            <strong>cloud-native infrastructure</strong>. My expertise covers
+            the full <strong>development lifecycle</strong>, including
+            <strong>software architecture</strong>,
+            <strong>CI/CD automation</strong>, and
+            <strong>cloud deployments</strong>. With proven experience in
+            designing and implementing
+            <strong>fullstack solutions</strong> using cutting-edge
+            <strong>JavaScript</strong> and
+            <strong>TypeScript technologies</strong>, I optimize development
+            processes and create
+            <strong>maintainable, production-ready code</strong> for businesses
+            of all sizes.
           </div>
         </header>
 
         <section>
-          <h2>Career – Next.js, Nuxt.js, NestJS &amp; DevOps Experience</h2>
+          <h2>Career</h2>
 
           <div class="item">
             <div class="item-title">Head of Engineering</div>
             <div class="item-meta">Servokat GmbH (since October 2024)</div>
             <ul>
               <li>
-                Creation and planning of a traffic lawyer administration tool
-                using <strong>NestJS</strong> and modern JavaScript/TypeScript
-                stacks
+                <strong>Development and planning</strong> of an administration
+                tool for traffic lawyers using <strong>NestJS</strong> and
+                modern
+                <strong>JavaScript/TypeScript stacks</strong>
               </li>
               <li>
-                Participation in metrics creation with R for data-driven
-                decision making
+                <strong>Development of metrics</strong> with
+                <strong>R</strong> for data-driven decision making
               </li>
               <li>
-                Administration and maintenance of multiple Linux and Windows
-                servers
+                <strong>Administration and maintenance</strong> of multiple
+                <strong>Linux</strong> and <strong>Windows servers</strong>
               </li>
               <li>
-                Implementation and maintenance of AWS runtimes and AWS Elastic
-                Beanstalk deployments
+                <strong>Implementation and maintenance</strong> of
+                <strong>AWS runtimes</strong> and
+                <strong>AWS Elastic Beanstalk</strong> deployments
               </li>
               <li>
-                Implementation and maintenance of Supabase authentication
-                workflows and database management
+                <strong>Implementation and maintenance</strong> of
+                <strong>Supabase authentication workflows</strong> and
+                <strong>database management</strong>
               </li>
               <li>
-                Participation in customer workshops and hosting workshops for
-                external interfaces
+                <strong>Conducting customer workshops</strong> and
+                <strong>workshops for external interfaces</strong>
               </li>
               <li>
-                Implementation of external interfaces and maintenance of
-                customer relationships
+                <strong>Development of external interfaces</strong> and
+                maintenance of customer relationships
               </li>
               <li>
-                Elaboration of customer concepts and tenders for new business
-                opportunities
+                <strong>Concept development and elaboration</strong> of customer
+                concepts and tenders for new business opportunities
               </li>
               <li>
-                Evaluation of tools and frameworks, including
-                <strong>Next.js</strong>, <strong>Nuxt.js</strong>, and
-                containerized solutions
+                <strong>Technology evaluation</strong> of tools and frameworks,
+                including <strong>Next.js</strong>, <strong>Nuxt.js</strong>,
+                and
+                <strong>containerized solutions</strong>
               </li>
-              <li>Reporting to CTO, customers, and business partners</li>
+              <li>
+                <strong>Reporting</strong> to CTO, customers, and business
+                partners
+              </li>
             </ul>
             <div class="tech">
               <strong>Technologies:</strong> JavaScript, TypeScript, NodeJS,
@@ -412,43 +206,50 @@
               Senior Fullstack Developer / Engineering Manager
             </div>
             <div class="item-meta">
-              IU Group (July 2022 - October 2024, part-time until January 2025)
+              IU Group (July 2022 - October 2024, part-time August 2024 -
+              January 2025)
             </div>
             <ul>
               <li>
-                Participation in the development of a student administration
-                tool using <strong>NestJS</strong> backend architecture
+                <strong>Development of a student administration tool</strong>
+                using
+                <strong>NestJS backend architecture</strong>
               </li>
               <li>
-                Implementation of GitLab CI/CD pipelines and DevOps automation
+                <strong>Implementation of GitLab CI/CD pipelines</strong> and
+                <strong>DevOps automation</strong>
               </li>
               <li>
-                Moving repositories from Bitbucket to GitLab for improved
-                workflow management
+                <strong>Migration of repositories</strong> from Bitbucket to
+                <strong>GitLab</strong> for
+                <strong>improved workflow management</strong>
               </li>
               <li>
-                Contribution in frontend architecture concepts and modern
-                JavaScript frameworks
+                <strong>Development of frontend architecture concepts</strong>
+                and
+                <strong>modern JavaScript frameworks</strong>
               </li>
               <li>
-                Planning and conducting workshops for GitLab Pipelines and
-                Frontend Architecture
+                <strong>Planning and conducting workshops</strong> for
+                <strong>GitLab Pipelines</strong> and
+                <strong>Frontend Architecture</strong>
               </li>
               <li>
-                Coaching of Junior and Mid-Level developers, creating career
-                plans for team members
+                <strong>Coaching of Junior and Mid-Level developers</strong>,
+                creating career plans for team members
               </li>
               <li>
-                Onboarding of new team members and mediation of conflicts within
-                the team
+                <strong>Onboarding of new team members</strong> and mediation of
+                team conflicts
               </li>
               <li>
-                Implementation of DORA metrics and KPIs for performance
-                measurement
+                <strong>Implementation of DORA metrics</strong> and
+                <strong>KPIs for performance measurement</strong>
               </li>
               <li>
-                Improvement of services through clean code methods and
-                consistent TypeScript typing
+                <strong>Service optimization</strong> through
+                <strong>clean code methods</strong> and
+                <strong>consistent TypeScript typing</strong>
               </li>
             </ul>
             <div class="tech">
@@ -466,24 +267,28 @@
             </div>
             <ul>
               <li>
-                Planning and development of a <strong>Node.js</strong> script to
-                download files from a GraphQL interface
+                <strong>Planning and development</strong> of a
+                <strong>Node.js</strong> script to
+                <strong>download files</strong> from a
+                <strong>GraphQL interface</strong>
               </li>
               <li>
-                Implementation of CLI functionality to pass different GraphQL
-                interfaces via command-line parameters
+                <strong>Implementation of CLI functionality</strong> to pass
+                different <strong>GraphQL interfaces</strong> via
+                <strong>command-line parameters</strong>
               </li>
               <li>
-                Development of dynamic pre and post scripts to modify data
-                processing workflows
+                <strong>Development of dynamic pre and post scripts</strong> to
+                <strong>modify data processing workflows</strong>
               </li>
               <li>
-                Implementation of template files for different output formats
-                and structures
+                <strong>Implementation of template files</strong> for different
+                <strong>output formats and structures</strong>
               </li>
               <li>
-                Comprehensive unit testing implementation with Jest for code
-                quality assurance
+                <strong>Comprehensive unit testing implementation</strong> with
+                <strong>Jest</strong> for
+                <strong>code quality assurance</strong>
               </li>
             </ul>
             <div class="tech">
@@ -499,27 +304,32 @@
             </div>
             <ul>
               <li>
-                Planning and conceptualization of a reusable, decoupled frontend
-                architecture for radio station
+                <strong>Planning and conceptualization</strong> of a
+                <strong>reusable, decoupled frontend architecture</strong> for
+                <strong>radio station</strong>
               </li>
               <li>
-                Development of a Radio Stream Player with modern
-                <strong>Nuxt.js</strong> framework
+                <strong>Development of a Radio Stream Player</strong> with
+                modern
+                <strong>Nuxt.js framework</strong>
               </li>
               <li>
-                Implementation of WebSocket interface for retrieving track
-                metadata using SockJS
+                <strong>Implementation of WebSocket interface</strong> for
+                <strong>retrieving track metadata</strong> using
+                <strong>SockJS</strong>
               </li>
               <li>
-                Development of reusable components for the website with Vue.js
+                <strong>Development of reusable components</strong> for the
+                website with <strong>Vue.js</strong>
               </li>
               <li>
-                Integration with GraphQL interface for data fetching and
-                management
+                <strong>Integration with GraphQL interface</strong> for
+                <strong>data fetching and management</strong>
               </li>
               <li>
-                Conception and enforcement of Clean Code conventions and best
-                practices
+                <strong>Conception and enforcement</strong> of
+                <strong>Clean Code conventions</strong> and
+                <strong>best practices</strong>
               </li>
             </ul>
             <div class="tech">
@@ -535,21 +345,26 @@
             </div>
             <ul>
               <li>
-                Development of a Progressive Web App (PWA) for DGAV (German
-                Society for General and Visceral Surgery)
+                <strong>Development of a Progressive Web App (PWA)</strong> for
+                DGAV (German Society for General and Visceral Surgery)
               </li>
               <li>
-                Planning and implementation of the PWA in collaboration with
-                backend developers
-              </li>
-              <li>Deployment of the PWA on Hetzner cloud infrastructure</li>
-              <li>
-                Development of a Push Notification Service using
-                <strong>Node.js</strong> and Web Push technology
+                <strong>Planning and implementation of the PWA</strong> in
+                collaboration with backend developers
               </li>
               <li>
-                Deployment and maintenance of the Push Notification Service on
-                Hetzner
+                <strong>Deployment of the PWA</strong> on
+                <strong>Hetzner cloud infrastructure</strong>
+              </li>
+              <li>
+                <strong>Development of a Push Notification Service</strong>
+                using <strong>Node.js</strong> and
+                <strong>Web Push technology</strong>
+              </li>
+              <li>
+                <strong>Deployment and maintenance</strong> of the
+                <strong>Push Notification Service</strong> on
+                <strong>Hetzner</strong>
               </li>
             </ul>
             <div class="tech">
@@ -566,43 +381,53 @@
             </div>
             <ul>
               <li>
-                <strong>Lead Developer for EO.Heimat rewrite:</strong> Planning
-                and conception of complete application rewrite from Angular2 to
+                <strong>Lead Developer for EO.Heimat rewrite:</strong>
+                <strong>Planning and conception</strong> of complete
+                <strong>application rewrite</strong> from
+                <strong>Angular2</strong> to
                 <strong>Vue.js</strong>
               </li>
               <li>
-                Sprint planning, API implementation, and file upload
-                improvements
+                <strong>Sprint planning</strong>,
+                <strong>API implementation</strong>, and
+                <strong>file upload improvements</strong>
               </li>
               <li>
-                Implementation of CI/CD pipelines in GitLab with Docker Swarm
-                and NGINX reverse proxy
+                <strong>Implementation of CI/CD pipelines</strong> in
+                <strong>GitLab</strong> with <strong>Docker Swarm</strong> and
+                <strong>NGINX reverse proxy</strong>
               </li>
               <li>
-                Integration of domains and SSL certificates for secure
-                deployments
+                <strong>Integration of domains</strong> and
+                <strong>SSL certificates</strong> for
+                <strong>secure deployments</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer for "Wintersportbericht" processing:</strong
                 >
-                Data structure planning, frontend conception, and external
-                interface implementations
+                <strong>Data structure planning</strong>,
+                <strong>frontend conception</strong>, and
+                <strong>external interface implementations</strong>
               </li>
               <li>
-                Performance analysis and optimization for improved user
-                experience
+                <strong>Performance analysis and optimization</strong> for
+                <strong>improved user experience</strong>
               </li>
               <li>
-                <strong>DevOps Engineer:</strong> Migration from Docker Swarm to
-                Azure WebApps
+                <strong>DevOps Engineer:</strong>
+                <strong>Migration from Docker Swarm</strong> to
+                <strong>Azure WebApps</strong>
               </li>
               <li>
-                Moving GitLab repositories from self-hosted to managed solutions
+                <strong>Moving GitLab repositories</strong> from
+                <strong>self-hosted</strong> to
+                <strong>managed solutions</strong>
               </li>
               <li>
-                Relocating MongoDB databases from self-hosted to Atlas for
-                improved scalability
+                <strong>Relocating MongoDB databases</strong> from
+                <strong>self-hosted</strong> to <strong>Atlas</strong> for
+                <strong>improved scalability</strong>
               </li>
             </ul>
             <div class="tech">
@@ -623,60 +448,73 @@
                 <strong
                   >Lead Backend Developer for ZigZag Social Media App:</strong
                 >
-                Planning migration from Firebase to MongoDB
+                <strong>Planning migration</strong> from
+                <strong>Firebase</strong> to <strong>MongoDB</strong>
               </li>
               <li>
-                Development of RESTful API for iOS App with performance
-                optimizations
+                <strong>Development of RESTful API</strong> for
+                <strong>iOS App</strong> with
+                <strong>performance optimizations</strong>
               </li>
               <li>
-                Supporting frontend team in transitioning to new interface
-                architecture
+                <strong>Supporting frontend team</strong> in
+                <strong>transitioning to new interface architecture</strong>
               </li>
               <li>
-                Implementation of AWS S3 bucket for file storage and CI pipeline
-                in GitLab
+                <strong>Implementation of AWS S3 bucket</strong> for
+                <strong>file storage</strong> and
+                <strong>CI pipeline in GitLab</strong>
               </li>
               <li>
-                Delivery of backend in Microsoft Azure WebApp with push
-                notifications using node-apn
+                <strong>Delivery of backend</strong> in
+                <strong>Microsoft Azure WebApp</strong> with
+                <strong>push notifications</strong> using
+                <strong>node-apn</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer for autoteileplusservice.de rewrite:</strong
                 >
-                Planning and conception of complete rewrite from AngularJS to
+                <strong>Planning and conception</strong> of complete
+                <strong>rewrite</strong> from <strong>AngularJS</strong> to
                 <strong>ReactJS</strong>
               </li>
               <li>
-                Sprint planning, RESTful API development, and CI pipeline
-                implementation
+                <strong>Sprint planning</strong>,
+                <strong>RESTful API development</strong>, and
+                <strong>CI pipeline implementation</strong>
               </li>
               <li>
-                Development of NGINX reverse proxy for HubSpot landing page
-                delivery
+                <strong>Development of NGINX reverse proxy</strong> for
+                <strong>HubSpot landing page delivery</strong>
               </li>
               <li>
-                <strong>WebOperations Manager:</strong> Implementation of
-                multiple CI/CD pipelines for different projects
+                <strong>WebOperations Manager:</strong>
+                <strong>Implementation of multiple CI/CD pipelines</strong> for
+                different <strong>projects</strong>
               </li>
               <li>
-                Management of GitLab repositories and user accounts with code
-                review contributions
+                <strong>Management of GitLab repositories</strong> and
+                <strong>user accounts</strong> with
+                <strong>code review contributions</strong>
               </li>
               <li>
                 <strong
                   >Lead Developer for inside-brillenprofi.de extranet with
                   ApostropheCMS:</strong
                 >
-                Sprint planning and customer consulting
+                <strong>Sprint planning</strong> and
+                <strong>customer consulting</strong>
               </li>
               <li>
-                Implementation of single sign-on solution for shops and
-                third-party app integration
+                <strong>Implementation of single sign-on solution</strong> for
+                <strong>shops</strong> and
+                <strong>third-party app integration</strong>
               </li>
               <li>
-                CMS system extensions and adjustments for customer requirements
+                <strong>CMS system extensions</strong> and
+                <strong>adjustments</strong> for
+                <strong>customer requirements</strong>
               </li>
             </ul>
             <div class="tech">
@@ -703,20 +541,30 @@
                   >Development of multi-language microsite nitzinger-it.de with
                   ApostropheCMS:</strong
                 >
-                Extension and adjustment of CMS system for customer requirements
+                <strong>Extension and adjustment</strong> of
+                <strong>CMS system</strong> for
+                <strong>customer requirements</strong>
               </li>
-              <li>Implementation of e-mail forms and contact functionality</li>
+              <li>
+                <strong>Implementation of e-mail forms</strong> and
+                <strong>contact functionality</strong>
+              </li>
               <li>
                 <strong
                   >Contribution to autoteileplusservice.de development:</strong
                 >
-                Feature development, change requests implementation, and
-                deployment process optimization
+                <strong>Feature development</strong>,
+                <strong>change requests implementation</strong>, and
+                <strong>deployment process optimization</strong>
               </li>
-              <li>Bug fixing and maintenance of existing applications</li>
+              <li>
+                <strong>Bug fixing</strong> and
+                <strong>maintenance of existing applications</strong>
+              </li>
               <li>
                 <strong>Contribution to www.fag-bremen.de development:</strong>
-                Feature development and comprehensive bug fixing
+                <strong>Feature development</strong> and
+                <strong>comprehensive bug fixing</strong>
               </li>
             </ul>
             <div class="tech">
@@ -737,15 +585,16 @@
                 <strong
                   >Contribution to Password Safe version 8 development:</strong
                 >
-                Development of onscreen keyboard functionality for enhanced
-                security
+                <strong>Development of onscreen keyboard functionality</strong>
+                for <strong>enhanced security</strong>
               </li>
               <li>
-                Development of changelog creation tool for version management
+                <strong>Development of changelog creation tool</strong> for
+                <strong>version management</strong>
               </li>
               <li>
-                General contribution to software development and comprehensive
-                bug fixing
+                <strong>General contribution to software development</strong>
+                and <strong>comprehensive bug fixing</strong>
               </li>
             </ul>
             <div class="tech">
